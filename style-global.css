@@ -17,3 +17,9 @@
         .text {
             font-size: 1.25vw
         }
+        .imgs {
+            max-width: 17vw;
+        }
+        .albtext{
+            font-size: 1.15vw;
+        }
