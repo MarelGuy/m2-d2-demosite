@@ -1,0 +1,19 @@
+        /* EXERCISE 1
+            For all Albums we'd like to have a consistent style.
+            Create a class for:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+         */
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .text {
+            font-size: 1.25vw
+        }
