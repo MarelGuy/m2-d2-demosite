@@ -1,32 +1,15 @@
 <!DOCTYPE html>
-<!--
-ASSIGNMENT RULES
-- The solution must be pushed to the repository and be available for the tutors by the end of the day.
-- You can ask for tutor's help.
-- You can google / use StackOverflow BUT we suggest you to use just the material provided.
-- To test the page, just open it with your default browser.
-- Use Bootstrap4 classes to render the page.
-- Use correctly containers and rows in order to achieve a great display.
-ASSIGNMENT TOPIC
-You are creating a website to showcase your favourite music albums.
-In this page you'd like to have a short bio of yourself, the top albums of your life, 
-the worst album you ever listen to and everything related to the music you love.
-NOTE:
-Most of the times, even the most expert of designers needs inspiration.
-Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
-Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
--->
 
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="style-global.css">
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style-global.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -41,10 +24,6 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 </head>
 
 <body>
-    <!-- EXERCISE 2 
-            Implement a navigation bar using the bootstrap component
-            This navigation bar must be linked to every section in your page
-        -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
             <Menu>Menu</Menu>
@@ -74,32 +53,25 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
         </div>
     </nav>
     <hr>
-    <!-- EXERCISE 3
-            Create a responsive section for your favourite albums.
-            In this section you should have:
-            - 4 albums per row when the screen is very large
-            - 3 albums per row when you are on a tablet (or a smaller window)
-            - 2 albums per row when you are on a small screen
-        -->
     <div class="container-fluid">
-        <div class="row row-cols-4">
-            <div class="col"><img class="img-fluid imgs"
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col"><img class="img-fluid imgs albimg"
                     src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fst.cdjapan.co.jp%2Fpictures%2Fl%2F05%2F26%2FSVWC-70027.jpg&f=1&nofb=1"
                     alt="Imagne not available imgs">
                 <h3 class="albtext" style="max-width: 20vw;">TIR O.S.T - Terror In Resonance 2: Crystalized Soundtrack
                 </h3>
             </div>
-            <div class="col"><img class="img-fluid imgs"
+            <div class="col"><img class="img-fluid imgs albimg"
                     src="http://stevenwilsonhq.com/sw/wp-content/uploads/2014/12/HCE-finalcover.jpg"
                     alt="Imagne not available imgs">
-                <h3 class="albtext">Steven Wilson - Hands. Cannot. Erase.</h3>
+                <h3 class="albtext">Steven Wilson - Handss. Cannot. Erase.</h3>
             </div>
-            <div class="col"><img class="img-fluid imgs"
+            <div class="col"><img class="img-fluid imgs albimg"
                     src="https://www.game-ost.com/static/covers_soundtracks/1/1/111466_588630.jpg"
                     alt="Imagne not available">
                 <h3 class="albtext">RADWIMPS - Kimi No Na Wa Soundtrack</h3>
             </div>
-            <div class="col"><img class="img-fluid imgs"
+            <div class="col"><img class="img-fluid imgs albimg"
                     src="https://www.morecore.de/wp-content/uploads/Monuments_Phronesis_2018.jpg"
                     alt="Imagne not available">
                 <h3 class="albtext">Monuments - Phronesis</h3>
@@ -107,58 +79,138 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
         </div>
     </div>
     <hr>
-    <!-- EXERCISE 4
-            Create a section for the album review.
-            Pick one of your fav albums, and create a section with:
-            - Cover
-            - Title
-            - Band
-            - Lenght
-            - Genre
-            - Tracklist
-            - ... And whatever you think it's interesting about it!
-        -->
+    <h1 class="text hs">Top worst albums</h1>
+    <h3 class="text text-center">Every</h3>
+    <h3 class="text text-center">Trap</h3>
+    <h3 class="text text-center">Album</h3>
+    <hr>
+    <div style="margin: 0.5vw;">
+        <h4 class="text hs">RADWIMPS, The best japanese Band</h4>
+        <p class="text">So, Why are they this good for me? first of all let's talk about their way to play the songs.
+            They have an
+            unusual disposition, apart from the guitars, drums and bassist. They have a violinist and a pianist (not
+            keyboarder). Width this disposition they do absolutley fantstic songs, infact they were called 2 times for
+            doing
+            film's soundtracks, and they are going to do another album for another film. Evcerytime i listen to them, i
+            have
+            an overfow of emotions with every song. Thanks to them i had more energuy while working, and i may be
+            listening
+            right now too!</p>
+    </div>
+    <hr>
+    <h3 class="text hs">Honorable mentions:</h3>
+    <div class="container-fluid">
+        <div class="row row-cols-20">
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/black-sabbath-paranoid-3bcd9090-b0e9-4d81-9210-eca983ae320d.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/metallica-puppets-d7382ca6-9e72-4770-b2f5-8b57922d57fb.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/judas-priest-british-steel-7f438dcd-f35c-4326-a8e9-f3089d79fed9.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/iron-maiden-number-beast-ade03a59-4678-4bad-a3c1-9a11071fd8e6.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/black-sabbath-568262b3-8b0b-464d-91f6-61e0b91d32c2.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/slayer-34a7ef2f-1f37-4581-bc52-555ac79cc1a2.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/motorhead-8ff05f09-c640-4217-900b-84010f9cbf65.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/megadeth-peace-sells-55f91e7d-bde4-4fd1-afd3-11f3ca2fd144.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/ozzy-blizzard-5001666b-350c-44dc-8857-6de41cdc16c8.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/pantera-vulgar-display-5807cdb0-365d-470b-9fdf-61d28245df04.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/metallica-lightning-ebbf6890-49d2-4746-ab85-11f37cdde6a2.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/judas-priest-vengeance-98856d7c-6e0d-47ba-ad5c-01a60752860b.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/iron-maiden-f5d6d58e-8833-4c1f-a6e6-1643600d4a8f.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/black-sabbath-vol4-cdd9f0f9-9c31-4483-a427-00d3525f334f.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/ozzy-diary-madman-f84f7d3e-cc6c-4eb1-8a9d-756117b2a6be.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/dio-holy-diver-57849827-0ecf-4555-b8e8-eb77ff932301.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/mercyful-fate-74657cee-adc3-486d-9955-af54059c05cd.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/tool-fb9d03e8-f512-46f4-9d37-e12ac495c8f8.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/megadeth-rust-peace-7c1efaee-7e9f-42d5-a6af-1f843a42a34d.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+            <div class="col">
+                <img class="img-fluid imgs lilimgs"
+                    src=https://www.rollingstone.com/wp-content/uploads/2018/06/anthrax-among-living-482cec04-1878-4b9d-b349-76f799d2e2f5.jpg?w=1024
+                    alt="Sorry, image not availabe">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer style="background-color: #bebebe; ">
+        <h5 class="text text-center">Twitch: MarelGuy</h5>
+        <h5>
+            <h5 class="text text-center">Discord: MarelGuy [Golans]#8424
+            </h5>
+    </footer>
 
-    <!-- EXERCISE 5
-            Worst album list! Find out the music you don't really like or you find overrated and list it
-            in this "hall of shame" chart!
-        -->
-
-    <!-- EXERCISE 6
-            Do you have any musician / band you admire or you are fan of?
-            This section is dedicated to him / her / them!
-            Feel free to experiment in this part of the page.
-        -->
-    <h4>RADWIMPS, The best japanese Band</h4>
-    <p>So, Why are they this good for me? first of all let's talk about their way to play the songs. They have an
-        unusual disposition, apart from the guitars, drums and bassist. They have a violinist and a pianist (not
-        keyboarder). Width this disposition they do absolutley fantstic songs, infact they were called 2 times for doing
-        film's soundtracks, and they are going to do another album for another film. Evcerytime i listen to them, i have
-        an overfow of emotions with every song. Thanks to them i had more energuy while working, and i may be listening
-        right now too!</p>
-    <!-- EXERCISE 7
-            Just covers!
-            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
-            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
-        -->
-
-    <!-- EXERCISE 8
-            Implement a footer with some information / social links
-        -->
-
-    <!-- EXTRA:
-         EXERCISE 9
-            Create album details that are going to be toggled on and off by clicking on the album image
-        -->
-
-    <!-- EXERCISE 10
-            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible)
-        -->
-
-    <!--
-            EXERCISE 11
-            Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
-        -->
 </body>
 
 </html>

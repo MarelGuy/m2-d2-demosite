@@ -1,25 +1,32 @@
-        /* EXERCISE 1
-            For all Albums we'd like to have a consistent style.
-            Create a class for:
-            - The album container
-            - The album cover
-            - The album title
-            - The album group / singer / dj
-            - The album genre
-            - The album duration
-            - etc
-         */
 
         body {
             font-family: 'Ubuntu', sans-serif;
+            margin: 0px;
+            background-color: #dddddd;
         }
 
         .text {
             font-size: 1.25vw
         }
+
         .imgs {
             max-width: 17vw;
         }
+
         .albtext{
             font-size: 1.15vw;
+        }
+
+        .lilimgs{
+            max-width: 8vw;
+            margin-top:0.7vw;
+        }
+
+        .hs{
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .albimg {
+            margin-bottom: 0.5vh;
         }
